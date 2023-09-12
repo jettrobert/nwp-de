@@ -135,6 +135,7 @@ export async function getStaticProps() {
   try {
     posts = await api.posts.browse({
       limit: 15, // Feel free to adjust the limit
+      filter: 'tags:[de]' // Only fetch posts with the 'de' tag
     });
   } catch (error) {
     console.error(error);
