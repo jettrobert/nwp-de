@@ -58,6 +58,7 @@ html {
   transform: scale(0.7);
   /* Initialize the boxes to 70% scale */
   opacity: 0.6;
+  margin-bottom: 50px;
   /* Initial opacity */
 }
 
@@ -215,7 +216,7 @@ html {
   /* Horizontal centering */
   align-items: center;
   /* Vertical centering */
-  width: 315px;
+  width: 350px;
   /* or another appropriate value */
   margin-top: -110px;
 }
