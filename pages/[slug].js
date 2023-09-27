@@ -146,6 +146,12 @@ export default function Post({ post }) {
                     ))}
                     <div className="read-time">{post.reading_time} Minuten Lesezeit</div>  {/* The new read-time tag */}
                 </div>
+                {isGrayBoxVisible && (
+                    <div className="dark-gray-box" id="sampleBox">
+                        <span className="close-icon" onClick={() => setGrayBoxVisible(false)}>X</span>
+                        <span className="sample-text">Unser Modell für SYN-DE befindet sich noch in einem sehr frühen Stadium und wir sind auf der Suche nach Leserfeedback zur Qualität der Texte. Schicken Sie uns eine Nachricht auf Instagram @new_world_person mit jeglichen Beobachtungen.</span>
+                    </div>
+                )}
                 <div className="markdown-content" dangerouslySetInnerHTML={{ __html: post.html }}></div>
             </div>
             {isPopupVisible && (
