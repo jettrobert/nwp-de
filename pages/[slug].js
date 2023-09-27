@@ -111,6 +111,8 @@ export default function Post({ post }) {
         }
     }, []);
 
+    const [isGrayBoxVisible, setGrayBoxVisible] = useState(true);
+
     return (
         <>
             <meta charSet="UTF-8" />
